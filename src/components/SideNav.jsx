@@ -15,7 +15,7 @@ const SideNav = () => {
                     </Button>
                 </Nav.Item>
                 <Nav.Item>
-                    <Button as={Link} to='/Login/AdminLogin/AdminLoginPage/reports' variant="dark" className="button">
+                    <Button as={Link} to='/Login/AdminLogin/AdminLoginPage/print' variant="dark" className="button">
                         <BsFileEarmarkText className="icon" />
                         Print Reports
                     </Button>

@@ -10,15 +10,16 @@ import Footer from './components/Footer.jsx';
 import SideNav from './components/SideNav.jsx';
 import Dashboard from './Dashboard';
 import Settings from './Settings';
-import Reports from './Reports';
+import Print from './Print.jsx'
+//import Reports from './Reports';
 import CustomerLoginPage from './CustomerLoginPage.jsx';
 import { Col, Container, Row } from 'react-bootstrap';
 /* import SettingsDept from './SettingsDept.jsx'
 import SettingsNotifs from './SettingsNotifs.jsx' */
 import SettingsQuestion from './SettingsQuestions.jsx'
 import OfficeHeadDashboard from './OfficeHeadDashboard.jsx'
-import Notification from './Notification.jsx'
-import Department from './Department.jsx'
+import Notification from './SettingsNotification.jsx'
+import Department from './SettingsDepartment.jsx'
 /* import MainDashboard from './MainDashboard.jsx';
 import AdminLoginPage from './AdminLoginPage.jsx';
 import OfficeHeadLoginPage from './OfficeHeadLoginPage.jsx'; 
@@ -61,7 +62,17 @@ function AppWithRouter() {
         } />
         <Route path="/Login/AdminLogin/OfficeHeadLoginPage/OfficeheadDashboard" element={
           <>
-            
+            <div className="d-flex flex-column min-vh-100">
+              <AdminHeader />
+              <Container fluid className="flex-grow-1 mt-5 pt-3">
+                <Row>
+                  <Col md={12} className="p-3">
+                    <OfficeHeadDashboard />
+                  </Col>
+                </Row>
+              </Container>
+              <Footer />
+            </div>
           </>
         } />
         <Route path="/Login/AdminLogin/AdminLoginPage/dashboard" element={
@@ -80,7 +91,7 @@ function AppWithRouter() {
             <Footer />
           </div>
         } />
-        <Route path="/Login/AdminLogin/AdminLoginPage/reports" element={
+        <Route path="/Login/AdminLogin/AdminLoginPage/Print" element={
           <div className="d-flex flex-column min-vh-100">
             <AdminHeader />
             <Container fluid className="d-flex flex-grow-1">
@@ -89,7 +100,7 @@ function AppWithRouter() {
                   <SideNav />
                 </Col>
                 <Col md={10} className="p-3">
-                  <Reports />
+                  <Print />
                 </Col>
               </Row>
             </Container>
@@ -173,12 +184,6 @@ function AppWithRouter() {
             </div>
           </>
         } />
-        <Route path="/login/adminLogin/OfficeHeadLoginPage/OfficeHeadDashboard" element={
-          <Container>
-            <OfficeHeadDashboard />
-          </Container>
-          }
-         />
         {/* Add other routes here as needed */}
       </Routes>
     </Router>

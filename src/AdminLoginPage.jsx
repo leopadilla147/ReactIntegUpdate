@@ -50,7 +50,7 @@ const AdminLoginPage = () => {
             </Button>
           </InputGroup>
         </Form.Group>
-        <Button as={Link} to='./dashboard' variant="dark" type="submit" className="w-100 mb-3 bg-color-2">Proceed</Button>
+        <Button as={Link} to='/Login/AdminLogin/AdminLoginPage/dashboard' variant="dark" type="submit" className="w-100 mb-3 bg-color-2">Proceed</Button>
       </Form>
       <Button as={Link} to='/login/adminLogin' variant="link" className="text-dark">Back</Button>
     </Container>
