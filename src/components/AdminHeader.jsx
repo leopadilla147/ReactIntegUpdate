@@ -1,7 +1,6 @@
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../components/CNSCLogo.png';
-
 import '../Welcome.css'
 import { Link } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ const AdminHeader = () => {
                             height="auto"
                             className="d-inline-block align-top"
                         />
-                        <div className="d-inline-block align-top ml-3">
+                        <div className="d-inline-block align-top">
                             <div>Camarines Norte State College</div>
                             <div>Customer Feedback System</div>
                         </div>

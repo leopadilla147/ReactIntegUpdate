@@ -1,8 +1,9 @@
-import { Row, Col, Form } from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
 import Overview from './components/Overview';
 import QuantitativeResult from './components/QuantitativeResult';
 import PieChart from './components/PieChart';
-import './Dashboard.css';
+import './OfficeHeadDashboard.css';
+import { Link } from 'react-router-dom';
 
 const OfficeHeadDashboard = () => (
     <div className="dashboard-container">
@@ -10,36 +11,37 @@ const OfficeHeadDashboard = () => (
             <Row className="align-items-center justify-content-between">
                 <Col md="auto">
                     <Form.Group controlId="selectAll">
-                        <Form.Check type="checkbox" label="All" />
+                        <Row className='d-flex align-items-center'>
+                            <Col md={2} className=''>
+                                <Button as={Link} to="/Login/AdminLogin/OfficeHeadLoginPage/OfficeheadDashboard">All</Button>
+                            </Col>
+                            <Col md={9} className='offset-1'>
+                                <Button as={Link} to="/Login/AdminLogin/AdminLoginPage/Print">Print Report</Button>
+                                
+                            </Col>
+                        </Row>
+
+
                     </Form.Group>
+
                 </Col>
                 <Col md="auto" className="ml-auto d-flex">
                     <Row>
                         <Col md="auto">
-                            <Form.Group controlId="selectOffice" className="mr-2">
-                                <Form.Control as="select" placeholder="Select Office">
-                                    <option value="" disabled selected>Select Office</option>
-                                    <option>Registrar Office</option>
-                                    <option>Admission Office</option>
-                                    <option>Guidance Office</option>
-                                </Form.Control>
-                            </Form.Group>
-                        </Col>
-                        <Col md="auto">
                             <Form.Group controlId="selectSemester" className="mr-2">
                                 <Form.Control as="select" placeholder="Semester">
-                                    <option value="" disabled selected>Semester</option>
-                                    <option>First Semester</option>
-                                    <option>Second Semester</option>
+                                    <option value="Placeholder" disabled>Semester</option>
+                                    <option value="First Semester">First Semester</option>
+                                    <option value="Second Semester">Second Semester</option>
                                 </Form.Control>
                             </Form.Group>
                         </Col>
                         <Col md="auto">
                             <Form.Group controlId="selectYear" className="mr-2">
                                 <Form.Control as="select" placeholder="Academic Year">
-                                    <option value="" disabled selected>Academic Year</option>
-                                    <option>2020-2021</option>
-                                    <option>2021-2022</option>
+                                    <option value="Placeholder" disabled>Academic Year</option>
+                                    <option value="2020-2021">2020-2021</option>
+                                    <option value="2021-2022">2021-2022</option>
                                 </Form.Control>
                             </Form.Group>
                         </Col>

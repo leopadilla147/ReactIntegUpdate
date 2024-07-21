@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { IoPersonCircleSharp } from 'react-icons/io5';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Container, Form, Button, InputGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const CustomerLoginPage = () => {
   const [username, setUsername] = useState('');
@@ -48,9 +49,9 @@ const CustomerLoginPage = () => {
             </Button>
           </InputGroup>
         </Form.Group>
-        <Button variant="dark" type="submit" className="w-100 mb-3 bg-color-2">Proceed</Button>
+        <Button as={Link} to='/Login/AdminLogin/CustomerLoginPage/CustomerDashboard' variant="dark" type="submit" className="w-100 mb-3 bg-color-2">Proceed</Button>
       </Form>
-      <Button variant="link" onClick={() => alert('Back button clicked')} className="text-dark">Back</Button>
+      <Button as={Link} to='/login/adminLogin' variant="link" className="text-dark">Back</Button>
     </Container>
   );
 };
