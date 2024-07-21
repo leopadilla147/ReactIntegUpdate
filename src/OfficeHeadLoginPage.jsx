@@ -50,7 +50,7 @@ const OfficeHeadLoginPage = () => {
             </Button>
           </InputGroup>
         </Form.Group>
-        <Button variant="dark" type="submit" className="w-100 mb-3 bg-color-2">Proceed</Button>
+        <Button as={Link} to='/login/adminLogin/OfficeHeadLoginPage/OfficeHeadDashboard' variant="dark" type="submit" className="w-100 mb-3 bg-color-2">Proceed</Button>
       </Form>
       <Button as={Link} to='/login/AdminLogin' variant="link" className="text-dark">Back</Button>
     </Container>

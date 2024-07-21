@@ -13,9 +13,12 @@ import Settings from './Settings';
 import Reports from './Reports';
 import CustomerLoginPage from './CustomerLoginPage.jsx';
 import { Col, Container, Row } from 'react-bootstrap';
-import SettingsDept from './SettingsDept.jsx'
-import SettingsNotifs from './SettingsNotifs.jsx'
+/* import SettingsDept from './SettingsDept.jsx'
+import SettingsNotifs from './SettingsNotifs.jsx' */
 import SettingsQuestion from './SettingsQuestions.jsx'
+import OfficeHeadDashboard from './OfficeHeadDashboard.jsx'
+import Notification from './Notification.jsx'
+import Department from './Department.jsx'
 /* import MainDashboard from './MainDashboard.jsx';
 import AdminLoginPage from './AdminLoginPage.jsx';
 import OfficeHeadLoginPage from './OfficeHeadLoginPage.jsx'; 
@@ -93,6 +96,7 @@ function AppWithRouter() {
             <Footer />
           </div>
         } />
+
         <Route path="/Login/AdminLogin/AdminLoginPage/settings" element={
           <div className="d-flex flex-column min-vh-100">
             <AdminHeader />
@@ -109,6 +113,7 @@ function AppWithRouter() {
             <Footer />
           </div>
         } />
+
         <Route path="/login/adminLogin/AdminLoginPage/settings/departments" element={
           <>
             <div className="d-flex flex-column min-vh-100">
@@ -120,7 +125,7 @@ function AppWithRouter() {
                   </Col>
                   <Col md={10} className="p-3">
                     <Settings />
-                    <SettingsDept />
+                    <Department />
                   </Col>
                 </Row>
               </Container>
@@ -128,6 +133,7 @@ function AppWithRouter() {
             </div>
           </>
         } />
+
         <Route path="/login/adminLogin/AdminLoginPage/settings/questions" element={
           <>
             <div className="d-flex flex-column min-vh-100">
@@ -147,6 +153,7 @@ function AppWithRouter() {
             </div>
           </>
         } />
+
         <Route path="/login/adminLogin/AdminLoginPage/settings/notifications" element={
           <>
             <div className="d-flex flex-column min-vh-100">
@@ -158,7 +165,7 @@ function AppWithRouter() {
                   </Col>
                   <Col md={10} className="p-3">
                     <Settings />
-                    <SettingsNotifs />
+                    <Notification />
                   </Col>
                 </Row>
               </Container>
@@ -166,6 +173,12 @@ function AppWithRouter() {
             </div>
           </>
         } />
+        <Route path="/login/adminLogin/OfficeHeadLoginPage/OfficeHeadDashboard" element={
+          <Container>
+            <OfficeHeadDashboard />
+          </Container>
+          }
+         />
         {/* Add other routes here as needed */}
       </Routes>
     </Router>
