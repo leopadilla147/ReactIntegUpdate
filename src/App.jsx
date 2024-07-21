@@ -79,11 +79,11 @@ function AppWithRouter() {
           <div className="d-flex flex-column min-vh-100">
             <AdminHeader />
             <Container fluid className="flex-grow-1 mt-5 pt-3">
-              <Row>
-                <Col md={2} className="p-0">
+              <Row className='offset-2'>
+                <Col className="p-0">
                   <SideNav />
                 </Col>
-                <Col md={10} className="p-3">
+                <Col md={12} className="p-3">
                   <Dashboard />
                 </Col>
               </Row>
@@ -95,11 +95,11 @@ function AppWithRouter() {
           <div className="d-flex flex-column min-vh-100">
             <AdminHeader />
             <Container fluid className="d-flex flex-grow-1">
-              <Row>
-                <Col md={2} className="p-0">
+              <Row className='offset-2'>
+                <Col className="p-0">
                   <SideNav />
                 </Col>
-                <Col md={10} className="p-3">
+                <Col md={12} className="p-3">
                   <Print />
                 </Col>
               </Row>
@@ -112,11 +112,11 @@ function AppWithRouter() {
           <div className="d-flex flex-column min-vh-100">
             <AdminHeader />
             <Container fluid className="flex-grow-1 mt-5 pt-3">
-              <Row>
-                <Col md={2} className="p-0">
+              <Row className='offset-2'>
+                <Col className="p-0">
                   <SideNav />
                 </Col>
-                <Col md={10} className="p-3">
+                <Col md={12} className="p-3">
                   <Settings />
                 </Col>
               </Row>
@@ -130,11 +130,11 @@ function AppWithRouter() {
             <div className="d-flex flex-column min-vh-100">
               <AdminHeader />
               <Container fluid className="flex-grow-1 mt-5 pt-3">
-                <Row>
-                  <Col md={2} className="p-0">
+                <Row className='offset-2'>
+                  <Col className="p-0">
                     <SideNav />
                   </Col>
-                  <Col md={10} className="p-3">
+                  <Col md={12} className="p-3">
                     <Settings />
                     <Department />
                   </Col>
@@ -150,11 +150,11 @@ function AppWithRouter() {
             <div className="d-flex flex-column min-vh-100">
               <AdminHeader />
               <Container fluid className="flex-grow-1 mt-5 pt-3">
-                <Row>
-                  <Col md={2} className="p-0">
+                <Row className='offset-2'>
+                  <Col className="p-0">
                     <SideNav />
                   </Col>
-                  <Col md={10} className="p-3">
+                  <Col md={12} className="p-3">
                     <Settings />
                     <SettingsQuestion />
                   </Col>
@@ -170,11 +170,11 @@ function AppWithRouter() {
             <div className="d-flex flex-column min-vh-100">
               <AdminHeader />
               <Container fluid className="flex-grow-1 mt-5 pt-3">
-                <Row>
-                  <Col md={2} className="p-0">
+                <Row className='offset-2'>
+                  <Col className="p-0">
                     <SideNav />
                   </Col>
-                  <Col md={10} className="p-3">
+                  <Col md={12} className="p-3">
                     <Settings />
                     <Notification />
                   </Col>

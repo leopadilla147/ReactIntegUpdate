@@ -1,4 +1,4 @@
-.print-container {
+.dashboard-container {
     padding: 20px;
     height: 100%;
     /* Ensure it fits within its container */
@@ -6,10 +6,40 @@
     /* Include padding in height calculation */
 }
 
-.borderpp {
-    border: 1px black solid;
+.form-inline-custom {
+    margin-bottom: 20px;
 }
 
-.boxbox {
-    height: 40px;
+.form-inline-custom .form-group {
+    margin-bottom: 10px;
+}
+
+.form-inline-custom .form-group label {
+    display: block;
+}
+
+.form-inline-custom .custom-dropdown {
+    height: auto;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+}
+
+.form-inline-custom .small-label {
+    font-size: .875rem;
+    margin-bottom: .25rem;
+}
+
+/* Ensure content does not push sidebar */
+.row.flex-grow-1 {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.borderto {
+    border: 1px solid black;
+}
+
+.top25 {
+    top: 25px;
 }
